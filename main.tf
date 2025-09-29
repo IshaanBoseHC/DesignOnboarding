@@ -1,9 +1,8 @@
 provider "null" {}
 
 resource "null_resource" "example" {
-  count = var.count
+  count = var.resource_count
 
-  # a trigger ensures Terraform notices changes to the message
   triggers = {
     index   = tostring(count.index)
     message = var.message
