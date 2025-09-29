@@ -1,4 +1,4 @@
-variable "count" {
+variable "resource_count" {
   description = "Number of null resources to create"
   type        = number
   default     = 3
